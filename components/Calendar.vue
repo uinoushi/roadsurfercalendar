@@ -89,11 +89,6 @@ export default {
       }
     }
 
-    .fc-toolbar-title {
-      font-size: $font-size-medium;
-      line-height: 1.4;
-    }
-
     .fc-toolbar-chunk {
       display: flex;
     }
@@ -114,6 +109,11 @@ export default {
         .fc-today-button {
           margin-left: auto;
         }
+      }
+
+      .fc-toolbar-title {
+        font-size: $font-size-large;
+        line-height: 1.4;
       }
     }
   }
