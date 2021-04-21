@@ -1,0 +1,38 @@
+html {
+  font-family: $font-encode-sans;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  padding: $length-gap-small;
+  
+  .main {
+    flex: 1 1 auto;
+    position: relative;
+  }
+
+  @media (min-width: $breakpoint-tablet-portrait) {
+    padding: $length-gap-large;
+  }
+}
