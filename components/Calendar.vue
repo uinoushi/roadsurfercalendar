@@ -100,10 +100,11 @@ export default {
   }
 
   @media (max-width: $breakpoint-tablet-portrait) {
-    .calendar {
+    .calendar .fc {
       .fc-header-toolbar {
         flex-direction: column;
         align-items: inherit;
+        font-size: $font-size-medium;
 
         .fc-toolbar-chunk:first-child {
           order: 1;
